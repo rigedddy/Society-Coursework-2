@@ -10,7 +10,20 @@ public class Main {
         int low = 4; //inclusive
         int high = 7; //exclusive
         int randomMembers = random.nextInt(high-low) + low;
-        System.out.println(randomMembers); // (testing to see if it only print between 4-6)
+        //System.out.println(randomMembers); // (testing to see if it only print between 4-6)
 
+        // initializing members array
+        SocMember[] members = new SocMember[randomMembers];
+
+        // correctly setting a name and number for each member
+        // requires a loop to add the members into the array until all members are added
+        for (int i=0; i < randomMembers; i++){
+            String rName = allStudentNames[random.nextInt(allStudentNames.length)];
+            int rNumber = allStudentNumbers[random.nextInt(allStudentNumbers.length)];
+
+            SocMember member = new SocMember(rName,rNumber);
+
+            members[i] = member;
+        }
     }
 }
