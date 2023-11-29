@@ -1,3 +1,4 @@
+//Question 2
 public class SocTeam {
     private SocMember president;
     private SocMember secretary;
