@@ -20,10 +20,28 @@ public class Main {
         for (int i=0; i < randomMembers; i++){
             String rName = allStudentNames[random.nextInt(allStudentNames.length)];
             int rNumber = allStudentNumbers[random.nextInt(allStudentNumbers.length)];
+            SocMember addedMember = new SocMember(rName,rNumber);
 
-            SocMember member = new SocMember(rName,rNumber);
+            members[i] = addedMember;
 
-            members[i] = member;
         }
+
+        // creating women society
+        SocTeam women_soc = new SocTeam(members[0],members[1],members[2]);
+        // print team members of women society
+        System.out.println("Women Society Team Members:");
+        System.out.println("President: " + women_soc.getPresidentName());
+        System.out.println("Secretary: " + women_soc.getSecretary());
+        System.out.println("Treasurer: " + women_soc.getTreasurer());
+
+        // creating bame society
+        SocTeam bame_soc = new SocTeam(members[randomMembers - 1],members[randomMembers - 2],members[randomMembers - 3]);
+        // printing team members of bame society
+        System.out.println("\nBame Society Team Members:");
+        System.out.println("President: " + bame_soc.getPresidentName());
+        System.out.println("Secretary: " + bame_soc.getSecretary());
+        System.out.println("Treasurer: " + bame_soc.getTreasurer());
+
     }
 }
+
