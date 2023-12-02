@@ -2,7 +2,7 @@
 import java.util.Random;
 public class Main {
     public static void main(String[] args){
-        String[] allStudentNames = {"Karina", "Luken", "Winter", "NingNing", "Giselle", "Eunha"};
+        String[] allStudentNames = {"Karina", "Xiao", "Winter", "NingNing", "Giselle", "Eunha"};
         int[] allStudentNumbers = {2867,3975,4306,7386,2797,1207};
 
         // arbitrary (random) number of students generator between 4-6
@@ -46,7 +46,9 @@ public class Main {
         System.out.println("Treasurer: " + bame_soc.getTreasurer());
 
         // success
-
+        if(SocMember.student_counter == members.length){
+            System.out.println("\nSuccess");
+        }
 
     }
 
