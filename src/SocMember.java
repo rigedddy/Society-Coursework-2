@@ -5,6 +5,13 @@ public class SocMember {
 
     public static int student_counter = 0; //this is a tracker for the amount of members in the society
 
+    //constructor
+    public SocMember(String name, int number){
+        this.name = name;
+        this.number = number;
+        student_counter++; // this ensures that the student counter is incremented when a new member is added
+    }
+
     // set and get for name
     public String getName() {
         return name;
@@ -23,11 +30,6 @@ public class SocMember {
         this.number = number;
     }
 
-    //constructor
-    public SocMember(String name, int number){
-        this.name = name;
-        this.number = number;
-        student_counter++; // this ensures that the student counter is incremented when a new member is added
-    }
+
 
 }

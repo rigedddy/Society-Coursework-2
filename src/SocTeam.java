@@ -1,6 +1,6 @@
 //Question 2
 public class SocTeam {
-    private SocMember president;
+    private SocMember president; // object references
     private SocMember secretary;
     private SocMember treasurer;
 
