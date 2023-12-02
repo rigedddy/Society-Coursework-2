@@ -6,10 +6,10 @@ public class Main {
         int[] allStudentNumbers = {2867,3975,4306,7386,2797,1207};
 
         // arbitrary (random) number of students generator between 4-6
-        Random random =  new Random();
+        Random r =  new Random();
         int low = 4; //inclusive
         int high = 7; //exclusive
-        int maxMembers = random.nextInt(high-low) + low;
+        int maxMembers = r.nextInt(high-low) + low;
         // System.out.println(maxMembers); // (testing to see if it only print between 4-6)
 
         // initializing members array
@@ -18,14 +18,10 @@ public class Main {
         // correctly setting a name and number for each member
         // requires a loop to add the members into the array until all members are added
         for (int i=0; i < maxMembers; i++){
-//            String rName = allStudentNames[random.nextInt(allStudentNames.length)]; (this created random members which is not required)
-//            int rNumber = allStudentNumbers[random.nextInt(allStudentNumbers.length)];
-            String rName = allStudentNames[i];
-            int rNumber = allStudentNumbers[i];
-            SocMember addedMember = new SocMember(rName,rNumber);
-
-            members[i] = addedMember;
-
+            String name = allStudentNames[i];
+            int number = allStudentNumbers[i];
+            SocMember addedMember = new SocMember(name,number);
+            members[i] = addedMember; // adds the member in the array
         }
 
         // creating women society
