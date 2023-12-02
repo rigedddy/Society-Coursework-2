@@ -27,7 +27,7 @@ public class Main {
         // creating women society
         SocTeam women_soc = new SocTeam(members[0],members[1],members[2]);
         // print team members of women society
-        System.out.println("Women Society Team Members:");
+        System.out.println("\nWomen Society Team Members:");
         System.out.println("President: " + women_soc.getPresidentName());
         System.out.println("Secretary: " + women_soc.getSecretary());
         System.out.println("Treasurer: " + women_soc.getTreasurer());

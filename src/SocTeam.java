@@ -1,8 +1,9 @@
 //Question 2
 public class SocTeam {
-    private SocMember president; // object references
-    private SocMember secretary;
-    private SocMember treasurer;
+    // object references
+    private final SocMember president; // declare these variables as final as they are constant (optimisation)
+    private final SocMember secretary;
+    private final SocMember treasurer;
 
     // constructor
     public SocTeam(SocMember president, SocMember secretary, SocMember treasurer) {
